@@ -1,0 +1,8 @@
+/* Слой анимации: маска для слов заголовков и отключение старого появления секций, чтобы не двоилось */
+.m-w { display: inline-block; overflow: hidden; vertical-align: top; padding: 0 .02em .14em; margin-bottom: -.14em; }
+.m-w > i { display: inline-block; font-style: inherit; will-change: transform; }
+html.m-on .s-reveal { opacity: 1; transform: none; transition: none; }
+html.m-on .s-hero__bg { overflow: hidden; }
+html.m-on .s-hero__bg img { transform: scale(1.08); }
+.s-photos figure { overflow: hidden; border-radius: 14px; }
+@media (prefers-reduced-motion: reduce) { .m-w, .m-w > i { overflow: visible; } }
